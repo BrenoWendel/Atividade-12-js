@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            const ano = Number(prompt("Digite o ano: "))
+            const anocopa = []
+            for (var i = 1930; i <= ano; i+=4){
+                anocopa.push(i)
+            }
+            if (ano == 1942 || ano == 1946){
+                alert("Não houve copa devido a 2º guerra")
+            }
+            else if (anocopa.includes(ano)){
+                alert(`${ano} é ano de copa`)
+            }
+            else{
+                alert("Não é ano de copa")
+            }
+    
+    </script>
+</body>
+</html>
