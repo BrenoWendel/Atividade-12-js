@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const num = Number(prompt('digite um numero: '))
+        const divisores = []
+        var somadiv = 0
+        for (let i = 1; i<num; i++ ){
+            if(num%i==0){
+                divisores.push(i)
+            }
+        }
+        for(var i = 0; i < divisores.length; i++) {
+        somadiv += divisores[i];
+        }
+        if(somadiv==num && num != 0){
+            alert(`${num} é um numero perfeito\nseus diviores são: ${divisores}\nsomando eles temos: ${somadiv}`)
+        }
+        else{
+            alert(`${num} não é um numero perfeito`)
+        }
+    </script>
+</body>
+</html>
