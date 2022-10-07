@@ -8,21 +8,27 @@
 </head>
 <body>
     <script>
+        while(true){
             const ano = Number(prompt("Digite o ano: "))
-            const anocopa = []
-            for (var i = 1930; i <= ano; i+=4){
-                anocopa.push(i)
-            }
-            if (ano == 1942 || ano == 1946){
-                alert("Não houve copa devido a 2º guerra")
-            }
-            else if (anocopa.includes(ano)){
-                alert(`${ano} é ano de copa`)
+            if(ano == 0){
+                break
             }
             else{
-                alert("Não é ano de copa")
+                const anocopa = []
+                for (var i = 1930; i <= ano; i+=4){
+                    anocopa.push(i)
+                }
+                if (ano == 1942 || ano == 1946){
+                    alert("Não houve copa devido a 2º guerra")
+                }
+                else if (anocopa.includes(ano)){
+                    alert(`${ano} é ano de copa`)
+                }
+                else{
+                    alert(`${ano} não é ano de copa`)
+                }
             }
-    
+        } 
     </script>
 </body>
 </html>
